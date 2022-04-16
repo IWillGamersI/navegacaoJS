@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/js.png" type="image/x-icon">
+          
+    <title>Navegação em JavaScript</title>
+</head>
+<body>
+
+<section>
+    <header class="menu">
+        <nav class="menu-desktop">
+            <div id="btn-painel" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                  </svg>
+                <p>
+                    Daschboard
+                </p> 
+            </div>
+            <div class="options">
+                <a href="">pedidos em aberto: </a>
+                <a href="">pedidos a fazer: </a>
+                <a href="#">pedidos entregues: </a>
+            </div>
+        </nav>
+    </header>
+</section>
+
+<section id="painel" class="estrutura ">
+    
+          
+    <div class="container">
+        <label for="">Financeiro</label>
+        <div class="group">
+            <p id="btn-contas-a-pagar" class="circle" >
+                <svg class="color-purple" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                  <label for="">contas à pagar</label>
+                </p>
+
+            <p id="btn-pedidos-a-receber" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <label for="">pedidos à receber</label>
+            </p>
+
+            <p id="btn-pedidos-recebidos" class="circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                </svg>
+                <label for="">pedidos recebido</label>
+            </p>
+
+            <p id="btn-compras" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                </svg>
+                <label for="">compra</label>
+            </p>
+            
+        </div>
+
+        <label for="">Administrativo</label>
+        <div class="group">
+            <p id="btn-cadastro" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                  </svg>
+                <label for="">cadastro</label>
+            </p>
+            <p id="btn-pedidos" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z" />
+                </svg>
+                <label for="">pedidos</label>    
+            </p>
+
+
+            <p id="btn-vendas" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <label for="">venda</label>
+            </p>
+
+            <p id="btn-estoque" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                  </svg>
+                <label for="">Estoque</label>
+            </p>
+        </div>
+
+        <label for="">Produção</label>
+        <div class="group">
+            <p id="btn-pedidos-em-aberto" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  </svg>
+                <label for="">pedidos em aberto</label>
+                </p>
+            
+            <p id="btn-pedido-em-producao" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                    <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd" />
+                  </svg>
+                <label for="">pedido em produção</label>
+                </p>
+
+            <p id="btn-pedidos-entregue" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+                  </svg>
+                <label for="">pedidos entregue</label>
+                </p>
+            <p id="btn-mao-de-obra" class="circle" >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                <label for="">mão de obra</label>
+                </p>
+        </div>
+        
+    </div>
+</section>
+
+<section id="contas-a-pagar" class="estrutura purple">
+    <div class="container">
+        <label for="">Contas a Pagar</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="pedidos-a-receber" class="estrutura">
+    <div class="container">
+        <label for="">Pedidos a Receber</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="pedidos-recebidos" class="estrutura purple">
+    <div class="container">
+        <label for="">Pedidos Recebidos</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="compras" class="estrutura">
+    <div class="container">
+        <label for="">Compras</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="cadastro" class="estrutura">
+    <div class="container">
+        <label for="">Cadastro</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="pedidos" class="estrutura purple">
+    <div class="container">
+        <label for="">Pedidos</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="vendas" class="estrutura">
+    <div class="container">
+        <label for="">Vendas</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="estoque" class="estrutura purple">
+    <div class="container">
+        <label for="">Estoque</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="pedidos-em-aberto" class="estrutura purple">
+    <div class="container">
+        <label for="">Pedido em Aberto</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="pedido-em-producao" class="estrutura purple">
+    <div class="container">
+        <label for="">Pedido em Produção</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="pedidos-entregue" class="estrutura purple">
+    <div class="container">
+        <label for="">Pedidos Entregue</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+<section id="mao-de-obra" class="estrutura purple">
+    <div class="container">
+        <label for="">Mão de Obra</label>
+        <div class="linha"></div>
+        
+    </div>
+</section>
+
+</body>
+<script src="/navegacao.js"></script>
+</html>
